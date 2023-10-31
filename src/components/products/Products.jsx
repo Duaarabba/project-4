@@ -16,9 +16,9 @@ import React ,{useEffect,useState} from 'react'
   return (
    <div className='row'>
     { products.map( (ele)=>{
-            return <div className='col-md-4 ' key={ele.id} >
+            return <div className='col-md-2 ' key={ele.id} >
                 <div>
-                <h2>{ele.title}</h2>
+                <p className='py-3'>{ele.title}</p>
                 <img src={ele.image} alt='product-img' className='w-100'/>
                 </div>
             </div>
